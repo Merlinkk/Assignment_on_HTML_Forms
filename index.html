@@ -14,69 +14,78 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience Feedback</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesnew.css">
 </head>
 <body>
   <header>
-  <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" height="30" alt="KALVIUM">
-
-  <form action="Anshul:anshulkashyap2504@gmail.com" method="post" enctype="text/plain">
-    
-    <h1>Kalvian Experience Form</h1>
-    <h4>Tell us who you are:</h4>
-  </header>
   
-<div id="info-container">
-  <div>  
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
+  <a href="https://kalvium.community" target="_blank">  <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" height="30" alt="KALVIUM">
+  </a>
+    
+    
+    
+  </header>
+    <div class="text">
+        <label for="name"><h1 align="center">Feedback Form</h1></label></div>
+    
 
-        <label for="roll">Roll no:</label>
-        <input type="tell" id="roll" maxlength="10">
+<div id="container">
+   
+    <form action="mailto:anshulkashyap2504@gmail.com" method="get" enctype="text/plain">
+   <hr>
+    <div  align="center">
+        <div class="input-data">
+            <input type="text" name="name" id="name" required placeholder="Name">
+        </div>
+        <div class="input-data">
+            <br>
+            <input type="tell" id="roll"  maxlength="10" placeholder="Roll no">
+        </div>
     </div>
 
-    <div>
-        <label for="phone">Phone no:</label>
-        <input type="tel" id="phone" maxlength="10" required>
-
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
+    <div align="center">
+        <br>
+        <div class="input-data"> 
+            <input type="tel" id="phone" maxlength="10" placeholder="Phone no">
+        </div>
+        <div class="input-data">
+            <br>
+            <input type="email" name="email" placeholder="Email" id="email" required>
+        </div>
+        <br><hr>
     </div>
-  </div>
+  
 
-    <div>
-      Prior Section:
-      <input type="radio" name="section" value="A">
-      <label for="A">A</label>
-      
-      <input type="radio" name="section" value="B">
-      <label for="B">B</label>
-      
-      <input type="radio" name="section" value="C">
-      <label for="C">C</label>
-      
-      <input type="radio" name="section" value="D">
-      <label for="D">D</label>
-      
-      <input type="radio" name="section" value="E">
-      <label for="E">E</label>
+    <div align="center">
+        <div>
+            Prior Section: <div></div>
+            <input type="radio" name="section" value="A">
+            <label for="A">A</label>
+            
+            <input type="radio" name="section" value="B">
+            <label for="B">B</label>
+            
+            <input type="radio" name="section" value="C">
+            <label for="C">C</label>
+            
+            <input type="radio" name="section" value="D">
+            <label for="D">D</label>
+            
+            <input type="radio" name="section" value="E">
+            <label for="E">E</label>
+          </div>
+
+          <div>
+            Sub-Section: <div></div>
+            <input type="radio" name="sub-section" id="sub-1">
+            <label for="sub-1">1</label>
+            <input type="radio" name="sub-section" id="sub-2">
+            <label for="sub-2">2</label>
+          </div>
+          <hr>
     </div>
     
-    <div>
-      Sub-Section:
-      <input type="radio" name="sub-section" id="sub-1">
-      <label for="sub-1">1</label>
-      <input type="radio" name="sub-section" id="sub-2">
-      <label for="sub-2">2</label>
-    </div>
-
-    <div>
-      <label for="desc-exp">Describe your Experience:</label>
-      <input type="text" name="textarea" id="desc-exp">
-    </div>
-</div>
-    <div>
+    <div align="center">
       <p> How would you rate your experience at kalvium on a scale of 1-10?</p>
       
       <input type="radio" name="scale" id="1">
@@ -108,14 +117,24 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
       
       <input type="radio" name="scale" id="10">
       <label for="10">10</label>
-    </div>
+    </div> <hr>
 <br><br>
-    <div>
-      <label for="sugg">Is there any way your experience could be better, we welcome any suggestions(be brutally honest!):</label>
-      <input type="textarea" name="" id="sugg">
+    <div align="center">
+      <textarea name="" id="sugg" cols="30" rows="4" placeholder="Is there any way your experience could be better, we welcome any suggestions(be brutally honest!):"></textarea>
+      <label for="sugg"></label>
     </div>
+    <hr>
 
-    <footer>
+    <div align="center">
+        <input type="submit" value="submit">
+    </div>
+</div>
+
+</form>
+</div>
+    
+
+<footer align="center">
       <p>Thank you for your vauable Feedback! We promise to do our best to improve upon any suggestions we come across.</p>
     </footer>
 
