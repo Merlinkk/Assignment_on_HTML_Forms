@@ -14,14 +14,19 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience Feedback</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" height="60" alt="KALVIUM">
+  <header>
+  <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" height="30" alt="KALVIUM">
 
   <form action="Anshul:anshulkashyap2504@gmail.com" method="post" enctype="text/plain">
     
-    <h2>Enter Your details and Feedback below:</h2>
-
+    <h1>Kalvian Experience Form</h1>
+    <h4>Tell us who you are:</h4>
+  </header>
+  
+<div id="info-container">
   <div>  
     <div>
         <label for="name">Name:</label>
@@ -42,36 +47,77 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
 
     <div>
       Prior Section:
-      <input type="radio" name="section" value="A1">
-      <label for="A1">A1</label>
+      <input type="radio" name="section" value="A">
+      <label for="A">A</label>
       
-      <input type="radio" name="section" value="A2">
-      <label for="A2">A2</label>
+      <input type="radio" name="section" value="B">
+      <label for="B">B</label>
       
-      <input type="radio" name="section" value="B1">
-      <label for="B1">B1</label>
+      <input type="radio" name="section" value="C">
+      <label for="C">C</label>
       
-      <input type="radio" name="section" value="B2">
-      <label for="B2">B2</label>
+      <input type="radio" name="section" value="D">
+      <label for="D">D</label>
       
-      <input type="radio" name="section" value="C1">
-      <label for="C1">C1</label>
-       
-      <input type="radio" name="section" value="C2">
-      <label for="C2">C2</label>
-      
-      <input type="radio" name="section" value="D1">
-      <label for="D1">D1</label>
-      
-      <input type="radio" name="section" value="D2">
-      <label for="D2">D2</label>
-      
-      <input type="radio" name="section" value="E1">
-      <label for="E1">E1</label>
-      
-      <input type="radio" name="section" value="E2">
-      <label for="E2">E2</label>
+      <input type="radio" name="section" value="E">
+      <label for="E">E</label>
     </div>
+    
+    <div>
+      Sub-Section:
+      <input type="radio" name="sub-section" id="sub-1">
+      <label for="sub-1">1</label>
+      <input type="radio" name="sub-section" id="sub-2">
+      <label for="sub-2">2</label>
+    </div>
+
+    <div>
+      <label for="desc-exp">Describe your Experience:</label>
+      <input type="text" name="textarea" id="desc-exp">
+    </div>
+</div>
+    <div>
+      <p> How would you rate your experience at kalvium on a scale of 1-10?</p>
+      
+      <input type="radio" name="scale" id="1">
+      <label for="1">1</label>
+      
+      <input type="radio" name="scale" id="2">
+      <label for="2">2</label>
+      
+      <input type="radio" name="scale" id="3">
+      <label for="3">3</label>
+      
+      <input type="radio" name="scale" id="4">
+      <label for="4">4</label>
+      
+      <input type="radio" name="scale" id="5">
+      <label for="5">5</label>
+      
+      <input type="radio" name="scale" id="6">
+      <label for="6">6</label>
+      
+      <input type="radio" name="scale" id="7">
+      <label for="7">7</label>
+      
+      <input type="radio" name="scale" id="8">
+      <label for="8">8</label>
+      
+      <input type="radio" name="scale" id="9">
+      <label for="9">9</label>
+      
+      <input type="radio" name="scale" id="10">
+      <label for="10">10</label>
+    </div>
+<br><br>
+    <div>
+      <label for="sugg">Is there any way your experience could be better, we welcome any suggestions(be brutally honest!):</label>
+      <input type="textarea" name="" id="sugg">
+    </div>
+
+    <footer>
+      <p>Thank you for your vauable Feedback! We promise to do our best to improve upon any suggestions we come across.</p>
+    </footer>
 
   </form>
 </body>
