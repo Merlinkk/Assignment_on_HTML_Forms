@@ -14,7 +14,7 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience Feedback</title>
-  <link rel="stylesheet" href="stylesnew.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -31,15 +31,15 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
 
 <div id="container">
    
-    <form action="mailto:anshulkashyap2504@gmail.com" method="get" enctype="text/plain">
+    <form action="mailto:anshulkashyap2504@gmail.com" method="post" enctype="text/plain">
    <hr>
     <div  align="center">
         <div class="input-data">
-            <input type="text" name="name" id="name" required placeholder="Name">
+            <input type="text" name="Name" id="name" required placeholder="Name">
         </div>
         <div class="input-data">
             <br>
-            <input type="tell" id="roll"  maxlength="10" placeholder="Roll no">
+            <input type="tell" id="roll" name="Roll no"  maxlength="10" placeholder="Roll no">
         </div>
     </div>
 
@@ -77,9 +77,9 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
 
           <div>
             Sub-Section: <div></div>
-            <input type="radio" name="sub-section" id="sub-1">
+            <input type="radio" name="sub-section" value="1" id="sub-1">
             <label for="sub-1">1</label>
-            <input type="radio" name="sub-section" id="sub-2">
+            <input type="radio" name="sub-section" value="2" id="sub-2">
             <label for="sub-2">2</label>
           </div>
           <hr>
@@ -88,40 +88,40 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
     <div align="center">
       <p> How would you rate your experience at kalvium on a scale of 1-10?</p>
       
-      <input type="radio" name="scale" id="1">
+      <input type="radio" name="Rating" value="1" id="1">
       <label for="1">1</label>
       
-      <input type="radio" name="scale" id="2">
+      <input type="radio" name="Rating" id="2" value="2">
       <label for="2">2</label>
       
-      <input type="radio" name="scale" id="3">
+      <input type="radio" name="Rating" id="3" value="3">
       <label for="3">3</label>
       
-      <input type="radio" name="scale" id="4">
+      <input type="radio" name="Rating" id="4" value="4">
       <label for="4">4</label>
       
-      <input type="radio" name="scale" id="5">
+      <input type="radio" name="Rating" id="5" value="5">
       <label for="5">5</label>
       
-      <input type="radio" name="scale" id="6">
+      <input type="radio" name="Rating" id="6" value="6">
       <label for="6">6</label>
       
-      <input type="radio" name="scale" id="7">
+      <input type="radio" name="Rating" id="7" value="7">
       <label for="7">7</label>
       
-      <input type="radio" name="scale" id="8">
+      <input type="radio" name="Rating" id="8" value="8">
       <label for="8">8</label>
       
-      <input type="radio" name="scale" id="9">
+      <input type="radio" name="Rating" id="9" value="9">
       <label for="9">9</label>
       
-      <input type="radio" name="scale" id="10">
+      <input type="radio" name="Rating" id="10" value="10">
       <label for="10">10</label>
     </div> <hr>
 <br><br>
     <div align="center">
-      <textarea name="" id="sugg" cols="30" rows="4" placeholder="Is there any way your experience could be better, we welcome any suggestions(be brutally honest!):"></textarea>
-      <label for="sugg"></label>
+      <label for="sugg">Suggestions</label> <div></div>
+      <textarea name="Suggestions" id="sugg" value="" cols="30" rows="4" placeholder="Is there any way your experience could be better, we welcome any suggestions(be brutally honest!):"></textarea>
     </div>
     <hr>
 
