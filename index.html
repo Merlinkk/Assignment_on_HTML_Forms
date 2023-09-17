@@ -13,63 +13,64 @@ Challenge 4: When the form is submitted, get the user's response and add the sam
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Experience Feedback</title>
 </head>
 <body>
   <img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" height="60" alt="KALVIUM">
 
   <form action="Anshul:anshulkashyap2504@gmail.com" method="post" enctype="text/plain">
     
-    <h2>Enter Your details:</h2>
+    <h2>Enter Your details and Feedback below:</h2>
 
+  <div>  
     <div>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required>
+
+        <label for="roll">Roll no:</label>
+        <input type="tell" id="roll" maxlength="10">
     </div>
 
     <div>
         <label for="phone">Phone no:</label>
         <input type="tel" id="phone" maxlength="10" required>
-    </div>
 
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
     </div>
+  </div>
 
     <div>
       Prior Section:
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="A1">
       <label for="A1">A1</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="A2">
       <label for="A2">A2</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="B1">
       <label for="B1">B1</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="B2">
       <label for="B2">B2</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="C1">
       <label for="C1">C1</label>
        
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="C2">
       <label for="C2">C2</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="D1">
       <label for="D1">D1</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="D2">
       <label for="D2">D2</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="E1">
       <label for="E1">E1</label>
       
-      <input type="radio" name="section" class="section">
+      <input type="radio" name="section" value="E2">
       <label for="E2">E2</label>
-      
     </div>
 
   </form>
